@@ -15,6 +15,8 @@ import { ChangeEvent, SetStateAction, useState } from "react";
 import { Grid, GridItem } from "@chakra-ui/react";
 import { SimpleGrid } from "@chakra-ui/react";
 import * as encrypt from "@/util/encrypt";
+import TextareaBox from "@/component/textareaBox";
+
 
 interface resultValue {
   encode: string;
@@ -54,38 +56,14 @@ export default function Encode() {
             <Card>
             <Heading size='xs'>base64</Heading>
               <SimpleGrid columns={2}>
-                <Box>
-                <InputGroup size="md">
-                  <Textarea
-                    pr="4.5rem"
-                    value={base64Value['encode']}
-                    placeholder="base64"
-                  />
-                  <InputRightElement width="4.5rem">
-                    <Button h="1.75rem" size="sm" onClick={handleClick}>
-                      {"copy"}
-                    </Button>
-                  </InputRightElement>
-                </InputGroup>
-                </Box>
+              <TextareaBox value={base64Value['encode']}/>
                 
-                <Box>
-                <InputGroup size="md">
-                  <Textarea
-                    pr="4.5rem"
-                    value={base64Value['decode']}
-                    placeholder="base64"
-                  />
-                  <InputRightElement width="4.5rem">
-                    <Button h="1.75rem" size="sm" onClick={handleClick}>
-                      {"copy"}
-                    </Button>
-                  </InputRightElement>
-                </InputGroup>
-                </Box>
+              <TextareaBox value={base64Value['decode']}/>
                 
               </SimpleGrid>
             </Card>
+
+            
           </Box>
           
 
