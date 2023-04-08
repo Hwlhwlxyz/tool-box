@@ -5,18 +5,38 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build",
+    "export": "next export",
     "start": "next start",
+    "tauri": "tauri",
     "lint": "next lint"
   },
   "dependencies": {
+    "@chakra-ui/react": "^2.5.5",
+    "@emotion/react": "^11.10.6",
+    "@emotion/styled": "^11.10.6",
+    "@react-hook/throttle": "^2.2.0",
+    "@tauri-apps/api": "^1.2.0",
     "@types/node": "18.15.11",
     "@types/react": "18.0.31",
+    "@types/react-burger-menu": "^2.8.3",
     "@types/react-dom": "18.0.11",
+    "ace-builds": "^1.16.0",
+    "crypto-js": "^4.1.1",
     "eslint": "8.37.0",
     "eslint-config-next": "13.2.4",
+    "framer-motion": "^10.10.0",
+    "json-beautify": "^1.1.1",
     "next": "13.2.4",
+    "parse-object": "^1.0.1",
     "react": "18.2.0",
+    "react-ace": "^10.1.0",
+    "react-burger-menu": "^3.0.9",
     "react-dom": "18.2.0",
+    "react-json-view": "^1.21.3",
     "typescript": "5.0.3"
+  },
+  "devDependencies": {
+    "@tauri-apps/cli": "^1.2.3",
+    "@types/crypto-js": "^4.1.1"
   }
 }
